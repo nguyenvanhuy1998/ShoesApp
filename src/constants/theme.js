@@ -1,5 +1,9 @@
-import {Dimensions} from 'react-native';
-const {width, height} = Dimensions.get('window');
+import {Dimensions, Platform} from 'react-native';
+import {getStatusBarHeight} from 'react-native-iphone-x-helper';
+const {height, width} = Dimensions.get('window');
+const IS_IOS = Platform.OS === 'ios';
+const SAFE_PADDING = getStatusBarHeight();
+const SAFE_AREA = getStatusBarHeight(true);
 const COLORS = {
   // base colors
   primary: '#FC6D3F', // orange
@@ -15,6 +19,26 @@ const COLORS = {
   lightGray4: '#F8F8F9',
   transparent: 'transparent',
   darkgray: '#898C95',
+};
+const boxShadow = {
+  shadowColor: '#000000',
+  shadowOpacity: 0.1,
+  shadowOffset: {
+    width: 0,
+    height: -4,
+  },
+  shadowRadius: 8,
+  elevation: 4,
+};
+const boxShadow2 = {
+  shadowColor: '#030C35',
+  shadowOpacity: 0.2,
+  shadowOffset: {
+    width: 0,
+    height: 2,
+  },
+  shadowRadius: 2,
+  elevation: 4,
 };
 const SIZES = {
   // global sizes
@@ -39,10 +63,8 @@ const SIZES = {
   body4: 14,
   body5: 12,
   body6: 16,
-
-  // app dimensions
-  width,
   height,
+  width,
 };
 const FONTS = {
   largeTitle: {
@@ -69,6 +91,16 @@ const FONTS = {
   body5: {fontFamily: 'Roboto-Regular', fontSize: SIZES.body5, lineHeight: 22},
   body6: {fontFamily: 'Roboto', fontSize: SIZES.body6},
 };
-const theme = {COLORS, SIZES, FONTS};
+
+const theme = {
+  COLORS,
+  SIZES,
+  FONTS,
+  boxShadow,
+  boxShadow2,
+  IS_IOS,
+  SAFE_PADDING,
+  SAFE_AREA,
+};
 
 export default theme;

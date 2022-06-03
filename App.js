@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {theme} from './src/constants';
-
+import {formatCurrency} from './src/utils/formatter';
 const App = () => {
   return (
     <View>
@@ -9,7 +9,7 @@ const App = () => {
         style={{
           ...theme.FONTS.body1,
         }}>
-        App
+        {formatCurrency(10000)}
       </Text>
     </View>
   );
