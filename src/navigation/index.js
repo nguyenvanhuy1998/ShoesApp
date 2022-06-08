@@ -4,7 +4,7 @@ import {
   createStackNavigator,
 } from '@react-navigation/stack';
 import {screenNames} from '../constants';
-import {Home, Login} from '../screens';
+import {Home, Login, Product} from '../screens';
 const Stack = createStackNavigator();
 const screenOptions = {
   cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
@@ -15,10 +15,11 @@ const screenOptions = {
 const AppNavigation = () => {
   return (
     <Stack.Navigator
-      initialRouteName={screenNames.Login}
+      initialRouteName={screenNames.Product}
       screenOptions={screenOptions}>
       <Stack.Screen name={screenNames.Login} component={Login} />
       <Stack.Screen name={screenNames.Home} component={Home} />
+      <Stack.Screen name={screenNames.Product} component={Product} />
     </Stack.Navigator>
   );
 };
