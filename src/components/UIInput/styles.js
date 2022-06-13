@@ -2,14 +2,16 @@ import {StyleSheet} from 'react-native';
 import {theme} from '../../constants';
 import {getTextStyle} from '../../utils/formatter';
 const styles = StyleSheet.create({
-  inputContainer: {
-    flexDirection: 'row',
-    backgroundColor: theme.COLORS.lightGray,
-    height: theme.SIZES.radius3,
-    paddingHorizontal: theme.SIZES.base * 2,
-    alignItems: 'center',
-    borderRadius: theme.SIZES.radius,
-    marginBottom: theme.SIZES.base * 2,
+  inputContainer(errorText) {
+    return {
+      flexDirection: 'row',
+      backgroundColor: theme.COLORS.lightGray,
+      height: theme.SIZES.radius3,
+      paddingHorizontal: theme.SIZES.base * 2,
+      alignItems: 'center',
+      borderRadius: theme.SIZES.radius,
+      marginBottom: errorText ? 0 : theme.SIZES.base * 2,
+    };
   },
   icon: {
     width: theme.SIZES.base * 2,

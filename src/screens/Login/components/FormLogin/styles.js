@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {theme} from '../../../../constants';
+import {getTextStyle} from '../../../../utils/formatter';
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
@@ -20,8 +21,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   titleLogin: {
-    ...theme.FONTS.body2,
-    textAlign: 'center',
+    ...getTextStyle(24, 32, 'Medium', theme.COLORS.black),
   },
   formLogin: {
     width: '80%',
@@ -67,14 +67,10 @@ const styles = StyleSheet.create({
     marginTop: theme.SIZES.base * 2,
   },
   subTitle: {
-    ...theme.FONTS.body4,
-    color: theme.COLORS.black,
-    fontWeight: '400',
+    ...getTextStyle(14, 22, 'Regular', theme.COLORS.black),
   },
   signUp: {
-    ...theme.FONTS.body4,
-    color: theme.COLORS.black,
-    fontWeight: '500',
+    ...getTextStyle(14, 22, 'Medium', theme.COLORS.black),
   },
 });
 export default styles;

@@ -15,7 +15,7 @@ const UIInput = ({
 }) => {
   return (
     <>
-      <View style={styles.inputContainer}>
+      <View style={styles.inputContainer(errorText)}>
         <Image source={icon} style={styles.icon} />
         <TextInput
           placeholder={placeholder}
@@ -26,6 +26,7 @@ const UIInput = ({
           onSubmitEditing={onSubmitEditing}
           returnKeyLabel={returnKeyLabel}
           keyboardType={keyboardType}
+          autoCapitalize="none"
           {...props}
         />
       </View>

@@ -3,9 +3,9 @@ import React from 'react';
 import {theme} from '../../constants';
 import {getTextStyle} from '../../utils/formatter';
 
-const UIButton = ({name}) => {
+const UIButton = ({name, onPress}) => {
   return (
-    <TouchableOpacity style={styles.button}>
+    <TouchableOpacity style={styles.button} onPress={onPress}>
       <Text style={styles.name}>{name}</Text>
     </TouchableOpacity>
   );
