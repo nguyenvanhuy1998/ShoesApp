@@ -1,6 +1,7 @@
 import React from 'react';
+import {View, Text, Image, TextInput, TouchableOpacity} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
-import {theme} from '../../../../constants';
+import {icons, theme} from '../../../../constants';
 import styles from './styles';
 const FormLogin = () => {
   return (
@@ -11,80 +12,64 @@ const FormLogin = () => {
         theme.COLORS.white,
         theme.COLORS.white,
       ]}>
-      {/* <View style={styles.linear_container}>
-        <View style={styles.form_container}>
-          <View style={styles.form_container_flex}>
-            <Text style={styles.form_container_flex__title}>Login</Text>
-            <View style={styles.form_input_container}>
-              <View style={styles.input_container}>
-                <View style={styles.input_with_icon_container}>
+      <View style={styles.container_login}>
+        <View style={styles.container_login_form}>
+          <View style={styles.container_login_form_content}>
+            <Text style={styles.container_login_form_content__titleLogin}>
+              Login
+            </Text>
+            <View style={styles.container_login_form_content_input}>
+              <View style={styles.container_login_form_content_input_container}>
+                <View
+                  style={
+                    styles.container_login_form_content_input_container_textInput
+                  }>
                   <Image
-                    source={icon_user}
-                    style={styles.input_with_icon_container__icon}
+                    source={icons.iconUser}
+                    style={
+                      styles.container_login_form_content_input_container_textInput__icon
+                    }
                   />
                   <TextInput
-                    onChangeText={text => (email = text)}
                     placeholder="Email"
-                    style={styles.input_with_icon_container__input}
+                    style={
+                      styles.container_login_form_content_input_container_textInput__input
+                    }
                   />
                 </View>
-
-                <View style={{height: 1, backgroundColor: '#DFDFDF'}} />
-
-                <View style={styles.input_with_icon_container}>
+                <View style={styles.line} />
+                <View
+                  style={
+                    styles.container_login_form_content_input_container_textInput
+                  }>
                   <Image
-                    source={icon_password}
-                    style={styles.input_with_icon_container__icon}
+                    source={icons.iconPassword}
+                    style={
+                      styles.container_login_form_content_input_container_textInput__icon
+                    }
                   />
                   <TextInput
-                    onChangeText={text => (password = text)}
                     secureTextEntry
                     placeholder="Password"
-                    style={styles.input_with_icon_container__input}
+                    style={
+                      styles.container_login_form_content_input_container_textInput__input
+                    }
                   />
                 </View>
               </View>
-              <View
-                style={{
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}>
-                <Animated.View
-                  style={{
-                    backgroundColor: '#000',
-                    borderRadius: 40,
-                    padding: 16,
-                    marginTop: 24,
-                    width: animInter,
-                  }}>
-                  <TouchableOpacity onPress={() => onPressLogin()}>
-                    {accessToken !== '' && accessToken !== undefined ? (
-                      <Image
-                        source={icon_close}
-                        style={{width: 24, height: 24}}
-                      />
-                    ) : (
-                      <Text
-                        style={{
-                          color: 'white',
-                          alignSelf: 'center',
-                          fontSize: 16,
-                          fontWeight: '500',
-                        }}>
-                        Login
-                      </Text>
-                    )}
-                  </TouchableOpacity>
-                </Animated.View>
+              <TouchableOpacity style={styles.buttonLogin}>
+                <Text style={styles.login}>Login</Text>
+              </TouchableOpacity>
+              <View style={styles.containerRegister}>
+                <Text style={styles.subTitle}>Don't have an account? </Text>
+                <TouchableOpacity>
+                  <Text style={styles.signUp}>Signup</Text>
+                </TouchableOpacity>
               </View>
-
-              <Text style={{alignSelf: 'center', marginTop: 16}}>
-                Don't have an account? Signup
-              </Text>
             </View>
           </View>
         </View>
-      </View> */}
+      </View>
     </LinearGradient>
   );
 };
