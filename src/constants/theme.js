@@ -8,6 +8,7 @@ const COLORS = {
   // base colors
   primary: '#FC6D3F', // orange
   secondary: '#CDCDD2', // gray
+  red: '#F05A69',
 
   // colors
   black: '#1E1F20',
@@ -19,6 +20,7 @@ const COLORS = {
   lightGray4: '#F8F8F9',
   transparent: 'transparent',
   darkgray: '#898C95',
+  line: '#DFDFDF',
 };
 const boxShadow = {
   shadowColor: '#000000',
