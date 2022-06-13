@@ -12,48 +12,23 @@ const FormLogin = () => {
         theme.COLORS.white,
         theme.COLORS.white,
       ]}>
-      <View style={styles.container_login}>
-        <View style={styles.container_login_form}>
-          <View style={styles.container_login_form_content}>
-            <Text style={styles.container_login_form_content__titleLogin}>
-              Login
-            </Text>
-            <View style={styles.container_login_form_content_input}>
-              <View style={styles.container_login_form_content_input_container}>
-                <View
-                  style={
-                    styles.container_login_form_content_input_container_textInput
-                  }>
-                  <Image
-                    source={icons.iconUser}
-                    style={
-                      styles.container_login_form_content_input_container_textInput__icon
-                    }
-                  />
-                  <TextInput
-                    placeholder="Email"
-                    style={
-                      styles.container_login_form_content_input_container_textInput__input
-                    }
-                  />
+      <View style={styles.flexOne}>
+        <View style={styles.containerFormLogin}>
+          <View style={styles.contentLogin}>
+            <Text style={styles.titleLogin}>Login</Text>
+            <View style={styles.formLogin}>
+              <View style={styles.viewInputContainer}>
+                <View style={styles.inputContainer}>
+                  <Image source={icons.iconUser} style={styles.icon} />
+                  <TextInput placeholder="Email" style={styles.input} />
                 </View>
                 <View style={styles.line} />
-                <View
-                  style={
-                    styles.container_login_form_content_input_container_textInput
-                  }>
-                  <Image
-                    source={icons.iconPassword}
-                    style={
-                      styles.container_login_form_content_input_container_textInput__icon
-                    }
-                  />
+                <View style={styles.inputContainer}>
+                  <Image source={icons.iconPassword} style={styles.icon} />
                   <TextInput
                     secureTextEntry
                     placeholder="Password"
-                    style={
-                      styles.container_login_form_content_input_container_textInput__input
-                    }
+                    style={styles.input}
                   />
                 </View>
               </View>

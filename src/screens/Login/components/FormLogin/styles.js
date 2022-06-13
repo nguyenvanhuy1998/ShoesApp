@@ -6,43 +6,43 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
-  container_login: {
+  flexOne: {
     flex: 1,
   },
-  container_login_form: {
+  containerFormLogin: {
     position: 'absolute',
     height: '50%',
     width: '100%',
     bottom: 0,
   },
-  container_login_form_content: {
+  contentLogin: {
     flex: 1,
     alignItems: 'center',
   },
-  container_login_form_content__titleLogin: {
+  titleLogin: {
     ...theme.FONTS.body2,
     textAlign: 'center',
   },
-  container_login_form_content_input: {
+  formLogin: {
     width: '80%',
     marginTop: theme.SIZES.base * 3,
     backgroundColor: theme.COLORS.white,
   },
-  container_login_form_content_input_container: {
+  viewInputContainer: {
     backgroundColor: theme.COLORS.lightGray,
     borderRadius: theme.SIZES.radius,
     padding: theme.SIZES.base * 3,
   },
-  container_login_form_content_input_container_textInput: {
+  inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  container_login_form_content_input_container_textInput__icon: {
+  icon: {
     width: theme.SIZES.base * 3,
     height: theme.SIZES.base * 3,
     resizeMode: 'cover',
   },
-  container_login_form_content_input_container_textInput__input: {
+  input: {
     flex: 1,
     marginLeft: theme.SIZES.base,
     height: theme.SIZES.radius3,
