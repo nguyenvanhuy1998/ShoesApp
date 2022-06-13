@@ -1,20 +1,16 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
+import styles from './styles';
+import BackgroundImage from './components/BackgroundImage';
+import FormLogin from './components/FormLogin';
 
 const Login = () => {
-  const {top} = useSafeAreaInsets();
   return (
-    <View
-      style={{
-        flex: 1,
-        paddingTop: top,
-      }}>
-      <Text>Login</Text>
+    <View style={styles.container}>
+      <BackgroundImage />
+      <FormLogin />
     </View>
   );
 };
 
 export default Login;
-
-const styles = StyleSheet.create({});
