@@ -28,11 +28,7 @@ const styles = StyleSheet.create({
     marginTop: theme.SIZES.base * 3,
     backgroundColor: theme.COLORS.white,
   },
-  viewInputContainer: {
-    backgroundColor: theme.COLORS.lightGray,
-    borderRadius: theme.SIZES.radius,
-    padding: theme.SIZES.base * 3,
-  },
+
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -54,8 +50,8 @@ const styles = StyleSheet.create({
   },
   buttonLogin: {
     backgroundColor: theme.COLORS.black,
-    marginTop: theme.SIZES.base * 3,
     height: theme.SIZES.radius3,
+    marginTop: theme.SIZES.base,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: theme.SIZES.base,
