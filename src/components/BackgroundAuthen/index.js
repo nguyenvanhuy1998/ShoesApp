@@ -1,8 +1,9 @@
 import {View, Image} from 'react-native';
 import React from 'react';
-import {images} from '../../../../constants';
 import styles from './styles';
-const BackgroundImage = () => {
+import {images} from '../../constants';
+
+const BackgroundAuthen = () => {
   return (
     <>
       <View style={styles.flexTwo}>
@@ -17,4 +18,4 @@ const BackgroundImage = () => {
   );
 };
 
-export default BackgroundImage;
+export default BackgroundAuthen;
