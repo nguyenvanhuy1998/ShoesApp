@@ -2,5 +2,9 @@ export default {
   Register: 'Register',
   Login: 'Login',
   Home: 'Home',
-  Product: 'Product',
+  BottomTab: 'BottomTab',
+  Search: 'Search',
+  Cart: 'Cart',
+  User: 'User',
+  Collection: 'Collection',
 };
