@@ -54,7 +54,7 @@ const SIZES = {
   padding2: 12,
 
   // font sizes
-  largeTitle: 50,
+  largeTitle: 40,
   h1: 30,
   h2: 22,
   h3: 12,
@@ -87,7 +87,7 @@ const FONTS = {
   body4_bold: {
     fontFamily: 'Roboto',
     fontSize: SIZES.body4,
-    fontWeight: '500',
+    fontWeight: '700',
   },
 
   body5: {fontFamily: 'Roboto-Regular', fontSize: SIZES.body5, lineHeight: 22},
