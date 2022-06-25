@@ -12,7 +12,7 @@ import {
   Cart,
   User,
   Collection,
-  Detail
+  Detail,
 } from '../screens';
 const Stack = createStackNavigator();
 const screenOptions = {
@@ -24,7 +24,7 @@ const screenOptions = {
 const AppNavigation = () => {
   return (
     <Stack.Navigator
-      initialRouteName={screenNames.BottomTab}
+      initialRouteName={screenNames.Detail}
       screenOptions={screenOptions}>
       <Stack.Screen name={screenNames.Login} component={Login} />
       <Stack.Screen name={screenNames.Home} component={Home} />
