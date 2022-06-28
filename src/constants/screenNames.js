@@ -7,4 +7,5 @@ export default {
   Cart: 'Cart',
   User: 'User',
   Collection: 'Collection',
+  Detail: 'Detail',
 };

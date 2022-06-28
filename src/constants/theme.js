@@ -11,8 +11,9 @@ const COLORS = {
   red: '#F05A69',
 
   // colors
-  black: '#1E1F20',
+  black: '#000',
   white: '#FFFFFF',
+  gray: '#ACACAC',
 
   lightGray: '#F5F5F6',
   lightGray2: '#F6F6F7',
@@ -50,6 +51,7 @@ const SIZES = {
   radius2: 21,
   radius3: 40,
   radius4: 32,
+  radius5: 10,
   padding: 10,
   padding2: 12,
 

@@ -5,4 +5,5 @@ import Search from './Search';
 import Cart from './Cart';
 import User from './User';
 import Collection from './Collection';
-export {Login, Home, BottomTab, Search, Cart, User, Collection};
+import Detail from './Detail';
+export {Login, Home, BottomTab, Search, Cart, User, Collection, Detail};
