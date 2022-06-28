@@ -5,7 +5,7 @@ import SIZES from '../../../../../../constants/theme';
 
 export default StyleSheet.create({
   information_product_top: {
-    padding: 20,
+    padding: SIZES.SIZES.padding * 2,
   },
   information_product_top_title: {
     color: COLORS.COLORS.black,
@@ -20,13 +20,13 @@ export default StyleSheet.create({
     color: COLORS.COLORS.gray,
   },
   information_product_top_image_rate_margin: {
-    marginLeft: 50,
-    marginRight: 10,
+    marginLeft: SIZES.SIZES.padding * 5,
+    marginRight: SIZES.SIZES.padding,
     width: 16,
     height: 16,
   },
   price_colors: {
-    marginTop: 10,
+    marginTop: SIZES.SIZES.padding,
   },
   price: {
     fontSize: SIZES.SIZES.h2,
@@ -43,14 +43,14 @@ export default StyleSheet.create({
   product_choose_color_black: {
     width: 20,
     height: 20,
-    borderRadius: 60 / 2,
+    borderRadius: SIZES.SIZES.radius4,
     backgroundColor: COLORS.COLORS.black,
     borderWidth: 1,
   },
   product_choose_color_white: {
     width: 20,
     height: 20,
-    borderRadius: 60 / 2,
+    borderRadius: SIZES.SIZES.radius4,
     backgroundColor: COLORS.COLORS.white,
     borderWidth: 1,
   },
@@ -58,7 +58,7 @@ export default StyleSheet.create({
     marginLeft: 7,
   },
   select_size: {
-    marginTop: 20,
+    marginTop: SIZES.SIZES.padding * 2,
   },
   select_size_text: {
     fontSize: SIZES.SIZES.h4,
@@ -71,16 +71,16 @@ export default StyleSheet.create({
     color: COLORS.COLORS.gray,
   },
   infor_choose_size: {
-    marginTop: 20,
+    marginTop: SIZES.SIZES.padding * 2,
   },
   choose_size: {
     width: SIZES.SIZES.base * 5,
     height: SIZES.SIZES.base * 5,
-    marginRight: 10,
+    marginRight: SIZES.SIZES.padding,
   },
   number_size: {
     alignSelf: 'center',
-    marginTop: 10,
+    marginTop: SIZES.SIZES.padding,
   },
   line: {
     marginVertical: SIZES.SIZES.base * 3,

@@ -1,20 +1,15 @@
 import {StyleSheet} from 'react-native';
 import COLORS from '../../../../constants/theme';
-import FONTS from '../../../../constants/theme';
 import SIZES from '../../../../constants/theme';
+import FONTS from '../../../../constants/theme';
 
 export default StyleSheet.create({
-  appBar: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    padding: SIZES.SIZES.body6,
+  category: {
+    marginTop: 15,
   },
-  appBarIcons: {
-    width: 24,
-    height: 24,
-  },
-  appBarText: {
-    color: COLORS.COLORS.black,
+  name_each_categories: {
+    color: COLORS.COLORS.white,
+    margin: 8,
     fontSize: SIZES.SIZES.h4,
     fontWeight: FONTS.FONTS.body4_bold.fontWeight,
   },

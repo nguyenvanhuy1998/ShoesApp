@@ -9,8 +9,8 @@ const ImgProduct = () => {
     <View style={styles.product}>
       <Image source={icons.like} style={styles.product_icon_like} />
       <Image
-        resizeMode="center"
-        source={{uri: dataProduct[8].image}}
+        resizeMode="cover"
+        source={{uri: dataProduct[7].image}}
         style={styles.product_image}
       />
     </View>

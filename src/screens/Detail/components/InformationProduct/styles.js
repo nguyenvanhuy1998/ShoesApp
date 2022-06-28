@@ -1,7 +1,5 @@
 import {StyleSheet} from 'react-native';
 import COLORS from '../../../../constants/theme';
-import FONTS from '../../../../constants/theme';
-import SIZES from '../../../../constants/theme';
 
 export default StyleSheet.create({
   information_product: {

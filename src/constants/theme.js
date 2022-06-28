@@ -51,6 +51,7 @@ const SIZES = {
   radius2: 21,
   radius3: 40,
   radius4: 32,
+  radius5: 10,
   padding: 10,
   padding2: 12,
 

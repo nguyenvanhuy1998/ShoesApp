@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import SIZES from '../../../../constants/theme';
 
 export default StyleSheet.create({
   product: {
-    margin: 15,
-    padding: 16,
+    margin: SIZES.SIZES.body6,
+    padding: SIZES.SIZES.body6,
     marginBottom: 0,
     paddingBottom: 0,
   },
@@ -14,6 +15,6 @@ export default StyleSheet.create({
   },
   product_image: {
     width: '100%',
-    height: '30%',
+    height: 222,
   },
 });
