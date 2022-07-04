@@ -36,7 +36,13 @@ const BottomTab = () => {
       <Tab.Screen name={screenNames.Home} component={Home} />
       <Tab.Screen name={screenNames.Search} component={Search} />
       <Tab.Screen name={screenNames.Collection} component={Collection} />
-      <Tab.Screen name={screenNames.Cart} component={Cart} />
+      <Tab.Screen
+        name={screenNames.Cart}
+        component={Cart}
+        options={{
+          tabBarStyle: {display: 'none'},
+        }}
+      />
       <Tab.Screen name={screenNames.User} component={User} />
     </Tab.Navigator>
   );
