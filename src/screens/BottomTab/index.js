@@ -43,7 +43,13 @@ const BottomTab = () => {
           tabBarStyle: {display: 'none'},
         }}
       />
-      <Tab.Screen name={screenNames.User} component={User} />
+      <Tab.Screen
+        name={screenNames.User}
+        component={User}
+        options={{
+          tabBarStyle: {display: 'none'},
+        }}
+      />
     </Tab.Navigator>
   );
 };

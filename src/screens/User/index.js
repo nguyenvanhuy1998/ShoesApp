@@ -1,10 +1,14 @@
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import React from 'react';
+import styles from './UserStyle';
+import AppBar from './component/AppBar';
+import UserProfile from './component/UserProfile';
 
 const User = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>User</Text>
+    <View style={styles.container}>
+      <AppBar />
+      <UserProfile />
     </View>
   );
 };
