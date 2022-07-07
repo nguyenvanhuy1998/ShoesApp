@@ -423,8 +423,24 @@ export const dataProduct = [
   },
 ];
 
+export const dataGetAllUser = [
+  {
+    id: '1',
+    name: 'Nguyen Van A',
+    rank: 'Diamond',
+    accumulatedScore: '100',
+  },
+  {
+    id: '2',
+    name: 'Tran Thi B',
+    rank: 'Sliver',
+    accumulatedScore: '100',
+  },
+];
+
 export default {
   dataPersonal,
   dataGetAllCategory,
   dataProduct,
+  dataGetAllUser,
 };
