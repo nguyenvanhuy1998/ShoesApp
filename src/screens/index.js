@@ -6,4 +6,15 @@ import Cart from './Cart';
 import User from './User';
 import Collection from './Collection';
 import Detail from './Detail';
-export {Login, Home, BottomTab, Search, Cart, User, Collection, Detail};
+import UpdateUser from './UpdateUser';
+export {
+  Login,
+  Home,
+  BottomTab,
+  Search,
+  Cart,
+  User,
+  Collection,
+  Detail,
+  UpdateUser,
+};
