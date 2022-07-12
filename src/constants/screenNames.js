@@ -8,4 +8,5 @@ export default {
   User: 'User',
   Collection: 'Collection',
   Detail: 'Detail',
+  UpdateUser: 'UpdateUser',
 };

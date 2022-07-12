@@ -429,12 +429,18 @@ export const dataGetAllUser = [
     name: 'Nguyen Van A',
     rank: 'Diamond',
     accumulatedScore: '100',
+    email: 'nguyenvana@gmail.com',
+    numberPhone: '0917171717',
+    address: '123 phan văn hớn, q12',
   },
   {
     id: '2',
     name: 'Tran Thi B',
     rank: 'Sliver',
     accumulatedScore: '100',
+    email: 'nguyenthib@gmail.com',
+    numberPhone: '0917171727',
+    address: '123 phan văn hớn, q1',
   },
 ];
 

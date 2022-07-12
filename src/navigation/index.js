@@ -13,6 +13,7 @@ import {
   User,
   Collection,
   Detail,
+  UpdateUser,
 } from '../screens';
 const Stack = createStackNavigator();
 const screenOptions = {
@@ -24,7 +25,7 @@ const screenOptions = {
 const AppNavigation = () => {
   return (
     <Stack.Navigator
-      initialRouteName={screenNames.BottomTab}
+      initialRouteName={screenNames.UpdateUser}
       screenOptions={screenOptions}>
       <Stack.Screen name={screenNames.Login} component={Login} />
       <Stack.Screen name={screenNames.Home} component={Home} />
@@ -34,6 +35,7 @@ const AppNavigation = () => {
       <Stack.Screen name={screenNames.User} component={User} />
       <Stack.Screen name={screenNames.Collection} component={Collection} />
       <Stack.Screen name={screenNames.Detail} component={Detail} />
+      <Stack.Screen name={screenNames.UpdateUser} component={UpdateUser} />
     </Stack.Navigator>
   );
 };
