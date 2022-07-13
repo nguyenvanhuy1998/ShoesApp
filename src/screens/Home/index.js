@@ -1,14 +1,22 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
 import React from 'react';
+import AppBar from './components/Appbar';
+import styles from './styles';
+import Categories from './components/Categories';
+import Products from './components/Products';
 
 const Home = () => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Home 123</Text>
+    <View style={styles.container}>
+      <View style={styles.background_black} />
+
+      <SafeAreaView style={styles.safeAreaView}>
+        <AppBar />
+        <Categories />
+        <Products />
+      </SafeAreaView>
     </View>
   );
 };
 
 export default Home;
-
-const styles = StyleSheet.create({});

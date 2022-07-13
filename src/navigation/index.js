@@ -25,7 +25,7 @@ const screenOptions = {
 const AppNavigation = () => {
   return (
     <Stack.Navigator
-      initialRouteName={screenNames.UpdateUser}
+      initialRouteName={screenNames.BottomTab}
       screenOptions={screenOptions}>
       <Stack.Screen name={screenNames.Login} component={Login} />
       <Stack.Screen name={screenNames.Home} component={Home} />
